@@ -1,8 +1,8 @@
 import key from "./config";
 
-export const fetchDefaultData = () => {
+export const fetchDefaultData = (searchTerm = "leeds") => {
   return fetch(
-    `https://app.ticketmaster.com/discovery/v2/events?apikey=${key}&latlong=53.8007554,-1.5490774&locale=*&page=1&city=leeds`
+    `https://app.ticketmaster.com/discovery/v2/events?apikey=${key}&locale=*&page=1&city=${searchTerm}`
   )
     .then(result => {
       return result.json();
