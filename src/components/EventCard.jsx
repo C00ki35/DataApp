@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 const EventCard = event => {
-  console.log(event);
+  // console.log(event);
   const startDate = new Date(event.dates.start.dateTime);
   return (
     <div>
