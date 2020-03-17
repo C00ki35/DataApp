@@ -14,7 +14,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="wrapper">
-        <SearchBar setSearchTerm={this.setSearchTerm} />
+        <Search setSearchTerm={this.setSearchTerm} />
         <Chart />
         <Title />
         <EventList searchTerm={this.state.searchTerm} />
